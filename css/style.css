@@ -32,7 +32,6 @@
  --primary: #212121;   /*black*/
  --secondary: #757575; /*grey*/
  --divider: #BDBDBD;   /*light grey*/
-
 }
 /* * {
   border: 1px dashed var(--divider);
@@ -40,6 +39,7 @@
 .header{
   height: 4rem;
   background-color: var(--bg-default);
+  font-family: 'Noto Sans', sans-serif;
 }
 .wrap{
   max-width: 72rem;
@@ -85,7 +85,7 @@
 
 .right ul{
   list-style-type: none;
-  width: 22rem;
+  width: 21.4rem;
   float: right;
   padding: 0;
   margin-top: 1.8rem;
