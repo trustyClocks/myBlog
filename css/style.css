@@ -1,0 +1,128 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* .myClass {
+ ├── 객체의 노출여부와 표현방식
+ │   ├── display
+ │   └── list-style
+ │
+ ├── 위치와 좌표
+ │   ├── position
+ │   ├── float
+ │   └── clear
+ │
+ ├── 크기와 여백
+ │   ├── width / height
+ │   └── padding / margin
+ │
+ ├── 윤곽과 배경
+ │   └── border / background
+ │
+ ├── 글자와 정렬
+ │   ├── color / font
+ │   ├── text-decoration
+ │   ├── text-align / vertical-align
+ │   └── white-space
+ │
+ └── 내용
+     └── content */
+:root{
+ --bg-dark: #455A64;   /*dark blue grey*/
+ --bg-default: #607D8B;/*blue grey*/
+ --bg-light: #CFD8DC;  /*light blue grey*/
+ --text: #FFFFFF;      /*white*/
+ --accent: #CDDC39;    /*line*/
+ --primary: #212121;   /*black*/
+ --secondary: #757575; /*grey*/
+ --divider: #BDBDBD;   /*light grey*/
+
+}
+/* * {
+  border: 1px dashed var(--divider);
+} */
+.header{
+  height: 4rem;
+  background-color: var(--bg-default);
+}
+.wrap{
+  max-width: 72rem;
+  height: inherit;
+  margin: auto;
+  overflow: hidden;
+}
+.left{
+  float: left;
+  width: 49%;
+  height: inherit;
+}
+.right{
+  float: right;
+  width: 49%;
+  height: inherit;
+}
+.title{
+  width: 13.2rem;
+  margin: 0.6rem;
+}
+.title a{
+  text-decoration: none;
+}
+.symbol{
+  display: inline-block;
+}
+.letters{
+  display: inline-block;
+  font-size: 1.3em;
+}
+.letters p{
+  color: var(--text);
+  margin: 0;
+}
+.letters p span{
+  color: var(--accent);
+}
+.version{
+  text-align: right;
+  font-size: 0.6em;
+}
+
+.right ul{
+  list-style-type: none;
+  width: 22rem;
+  float: right;
+  padding: 0;
+  margin-top: 1.8rem;
+  margin-right: 0.6rem;
+  overflow: hidden;
+}
+.right ul li{
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.right ul li a{
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1em;
+}
+
+@media screen and (max-width: 760px) {
+  .header{
+    height: 6rem;
+  }
+  .left{
+    float: none;
+    height: 4rem;
+    width: 100%;
+  }
+  .right{
+    float: none;
+    height: 2rem;
+    width: 100%;
+  }
+  .right ul{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
