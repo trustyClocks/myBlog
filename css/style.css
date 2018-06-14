@@ -33,9 +33,9 @@
  --secondary: #757575; /*grey*/
  --divider: #BDBDBD;   /*light grey*/
 }
-* {
+/* * {
   border: 0.1px dashed #BDBDBD;
-}
+} */
 .header{
   height: 4rem;
   background-color: #455A64;
